@@ -28,5 +28,5 @@ try {
 }
 
 
-header('Location: ../connexion.php');
+header('Location: ../public/connexion.php');
 exit;

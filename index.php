@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./public/style/output.css">
 </head>
 
 <body class="bg-primary">
@@ -19,8 +19,8 @@
                 <input type="text" name="" id="" placeholder="Quel livre recherchez-vous?" class="w-[400px] rounded-sm">
                 <input type="submit" value="Rechercher">
             </form>
-            <a href="./connexion.php">Se connecter</a>
-            <a href="./inscription.php">S'inscrire</a>
+            <a href="./public/connexion.php">Se connecter</a>
+            <a href="./public/inscription.php">S'inscrire</a>
         </nav>
     </header>
     <main class="flex flex-col gap-28">

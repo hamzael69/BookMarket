@@ -30,5 +30,5 @@ try{
     echo "Erreur lors de l'insertion : " . $e->getMessage();
 }
 
-header("Location: ../main.php");
+header("Location: ../public/main.php");
 exit;
