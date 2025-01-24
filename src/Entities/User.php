@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class User{
+ class User{
     private int $id;
     private string $lastname;
     private string $firstname;
@@ -13,12 +13,12 @@ abstract class User{
     public function __construct(int $id, string $lastname, string  $firstname, string $mail, string $telephone, string $password, int $idRole)
     {
         $this->id = $id;
-        $this->lastname;
-        $this->firstname;
-        $this->mail;
-        $this->telephone;
-        $this->password;
-        $this->idRole;
+        $this->lastname = $lastname;
+        $this->firstname = $firstname;
+        $this->mail = $mail;
+        $this->telephone = $telephone;
+        $this->password = $password;
+        $this->idRole = $idRole;
     }
 
 

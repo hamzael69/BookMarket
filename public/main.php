@@ -1,6 +1,10 @@
 <?php
+require_once '../connect/connectDB.php';
+require_once '../utils/autoloader.php';
 
 session_start();
+
+
 
 
 
@@ -27,7 +31,7 @@ session_start();
                 <input type="text" name="" id="" placeholder="Quel livre recherchez-vous?" class="w-[400px] rounded-sm">
                 <input type="submit" value="Rechercher">
             </form>
-            <p>Bonjour <?= $_SESSION['user']['firstname']?></p>
+            <p>Bonjour <?= $_SESSION['user']->getFirstname()?></p>
             <a href="./profil-client.php">Mon compte</a>
             <a href="./parametre.php">Paramètres</a>
             
