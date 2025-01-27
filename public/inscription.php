@@ -20,7 +20,7 @@
     <div class="text-neutral-white p-16 rounded-sm flex flex-col items-center ">
         <form action="../process/process_inscription.php" method="post" class="flex flex-col gap-4">
 
-        <div>
+            <div>
                 <label for="lastname">Nom :</label>
                 <input class='rounded-xl' type="lastname" id="lastname" name="lastname" required />
             </div>
@@ -30,7 +30,7 @@
                 <input class='rounded-xl' type="firstname" id="firstname" name="firstname" required />
             </div>
 
-        <div>
+            <div>
                 <label for="telephone">Téléphone : </label>
                 <input class='rounded-xl' type="telephone" id="telephone" name="telephone" required />
             </div>
@@ -45,6 +45,14 @@
                 <label for="password">Password :</label>
                 <input class='rounded-xl' type="password" id="password" name="password" required />
             </div>
+
+            <fieldset >
+            <label for="client">Client</label>
+            <input type="radio" id="client" name="client" value="client">
+            <label for="pro">Professionel</label>
+            <input type="radio" id="pro" name="client" value="pro" >
+
+            </fieldset>
 
 
             <input type="submit" value="Se connecter" class="text-white bg-tresorerie rounded-2xl p-2 px-6 cursor-pointer w-[100%]" />
