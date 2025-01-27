@@ -2,23 +2,23 @@
 
 
  class User{
-    private int $id;
+    private ?int $id;
     private string $lastname;
     private string $firstname;
     private string $mail;
     private string $telephone;
     private string $password;
-    private int $idRole;
 
-    public function __construct(int $id, string $lastname, string  $firstname, string $mail, string $telephone, string $password, int $idRole)
+
+    public function __construct( string $lastname, string  $firstname, string $mail, string $telephone, string $password)
     {
-        $this->id = $id;
+      
         $this->lastname = $lastname;
         $this->firstname = $firstname;
         $this->mail = $mail;
         $this->telephone = $telephone;
         $this->password = $password;
-        $this->idRole = $idRole;
+       
     }
 
 
@@ -144,23 +144,5 @@
     }
 
 
-    /**
-     * Get the value of idRole
-     */ 
-    public function getIdRole()
-    {
-        return $this->idRole;
-    }
 
-    /**
-     * Set the value of idRole
-     *
-     * @return  self
-     */ 
-    public function setIdRole($idRole)
-    {
-        $this->idRole = $idRole;
-
-        return $this;
-    }
 }
