@@ -46,13 +46,11 @@
                 <input class='rounded-xl' type="password" id="password" name="password" required />
             </div>
 
-            <fieldset >
-            <label for="client">Client</label>
-            <input type="radio" id="client" name="client" value="client">
-            <label for="pro">Professionel</label>
-            <input type="radio" id="pro" name="client" value="pro" >
-
-            </fieldset>
+            <label for="idRole">Choisis ton role:</label>
+            <select id="idRole" name="idRole" required>
+                <option value="1">Client</option>
+                <option value="2">Vendeur Professionnel</option>
+            </select>
 
 
             <input type="submit" value="Se connecter" class="text-white bg-tresorerie rounded-2xl p-2 px-6 cursor-pointer w-[100%]" />
